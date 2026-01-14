@@ -1,0 +1,19 @@
+<!doctype html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Getting Started with Calculator</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+
+<h1>Currency Converter</h1>
+
+<form action="#" th:action="@{/index}" th:object="${index}" method="post">
+    <p>USD: <input type="text" th:field="*{n1}"/></p>
+    <p><input type="submit" value="to"/>
+    <p th:text="'PLN: ' + ${index.n2}" />
+    United States Dollar is 3,62 Polish zloty
+</form>
+
+</body>
+</html>
